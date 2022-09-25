@@ -1,0 +1,413 @@
+<span></span><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SAM HELP STATION</title>
+    <style>
+ 
+ <!----HAPA NI MWANZO YA MENU ICON CSS TU ------>
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+<!----HAPA NI MWISHO WA CSS YA MENU ICON DONE------>
+
+    
+    
+<!--Hii Ni kwa ajili ya Navigation ---->
+body {
+  background-color: white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 120%; height: 100px;
+  background-color: maroon;
+}
+
+li {
+  float:left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 12px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: black;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+<!--Hapa ni mwisho wa css Navigation-->
+
+
+.rectangle1 {
+height: 300px;
+width: 100px;
+background-color:  blue;
+
+position: absolute;
+ }
+
+   .rectangle2 { 
+height: 300px;
+width: 100px;
+background-color: red;
+
+position: absolute;
+}
+   
+   .rectangle3 { 
+height: 300px;
+width: 100px;
+background-color: green;
+
+position: absolute;
+}
+
+   .rectangle4 { 
+height: 300px;
+width: 100px;
+background-color:  purple;
+
+position: absolute;
+}
+
+
+
+<!--Hii ni Slidder ya Picha yangu Css-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+<!--HAPA NI MWISHO WA CSS SLIDDER PICHA YANGU-->
+ 
+  h2{
+    margin:10px;
+    padding:10px;
+    background-color: purple;
+    border:2px solid brown;    
+    }
+    </style>
+</head>
+
+<ul>
+     
+</script>
+<!--HIII YOTEE NI MENU ICON KWA HTML NA JS TU-->
+  <li style="color:blue"><a href="#home">Home</a></li>
+  <li><a href="#news">Result</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      
+    </div>
+  </li>
+</ul>
+
+
+<!--Hapa Ni Html, Js, ye Slidder ya Picha-->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="image/hand.jpg" style="width:100%">
+  <div class="text">sam</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="image/mt.jpg" style="width:100%">
+  <div class="text">sam</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="image/cjj.jpg" style="width:100%">
+  <div class="text">sam</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<!-- Hii ni Script ya Slidder ya Mwishi picha-->
+
+<body style="background-color: orange">
+    <h1 style="color: durkblue"; style="background-color: blue">HACKING HELP CENTER</h1> <hr>
+  <p style="color: blue"> Hello friends<br>Welcome in our web, our services is available Monday to Friday let us help you now
+    </p> 
+    
+    
+    <img src="image/ck.jpg" alt="ck" style="width:300px;  height:250;">
+    <p style=" background-color: pink">
+        <p style="color: darkblue">here our services is to help people who hacked to  own their Account again we recover
+      <ul style="background-color: orange"><li> Facebook</li> <br><li>Tiktok</li><br><li>Instagram</li>
+      <br>
+      </ul>  
+        <img src="image/virus.jpg" alt="ck" style="width:300px;  height:250;">
+         </p>
+    
+  <p><h3 style="color: brown"><b>WE HAVE HACKER ACADEMY WE TEACH</b></h3>
+  
+1. Basic Termux using   <br>
+
+2. Termux Login  <br>
+
+3. Facebook hack<br>
+
+4. How to get cookies<br>
+
+5. How to get token<br>
+
+6. How to Edit command script<br> 
+
+<img src="image/Termux using.jpg" alt="ck" style="width:200px;  height:300;"><br>
+
+To join our group <a href="https://chat.whatsapp.com/BIVaKFXeCpG5hLozRoHJNj">press here</a>
+</p> <br>
+<h2>Hacking</h2>
+
+<p>   Here is a list of the best hacking tools for Termux. These Termux tools will allow you to do penetration testing and check the security of web servers.<br>
+
+______________________________________________<br>
+Note | This article is for educational purposes only. these tools are not responsible for any illegal activity done by using these tools.<br>
+-----------------------------------------------------------------------<br>
+
+
+<h2>What is Termux tool?</h2>
+
+Termux is an open-source Terminal emulator that can run a Linux environment on Android devices. Termux integrates powerful terminal emulation with a comprehensive Linux package collection. Termux is used by ethical hackers and cybersecurity professionals for ethical hacking and penetration testing.<br>
+
+
+<h2>16 Best Termux Tools for Ethical Hacking in 2022</h2>
+
+Many security professionals and certified ethical hackers use these Termux tools for legal penetration testing. Here is the list you are looking for:<br>
+
+Metasploit Framework - One of the Best Termux tools.<br>
+
+Nmap - Termux tool for scanning IP addresses and ports in a network.<br>
+
+Wireshark - A tool for analyzing send and capture network packets.<br>
+
+SQLMAP - Termux tool for SQL injection.<br>
+
+Social Engineering Toolkit - Toolkit containing several Termux tools.<br>
+
+Nikto - Web app vulnerabilities scanner Termux tool.<br>
+
+Tool-X - Covers all Termux tools.<br>
+
+Fsociety Toolkit - Contains tools featured in MR.Robot series.<br>
+
+Hydra - A Termux tool used to crack passwords.<br>
+
+Slowloris - A Termux tool for DDoS attacks.<br>
+
+Zphisher - A phishing tool for Termux.<br>
+
+IP Tracer - A tool for Termux used to trace IP addresses.<br>
+
+EasY_HaCk - Network scanning and information gathering tool for Termux.<br>
+
+Seeker - A tool for Termux that allows you to track real-time location.<br>
+
+Infect - Termux tool for sending viruses in Android.<br>
+
+Onex - Package manager tool for Termux. Allows you to install various Termux tools.<br>
+-----------------------------------------------------------------------<br>
+
+  </p>
+
+
+
+<img src="image/pc.jpg" alt="pc" style="width:300px;  height:300;"> follomy page on <b>Facebook</b> 
+
+<a href="https://www.facebook.com/100153766121332/posts/100542226082486/?flite=scwspnss">Press here</a>.  Also you can
+ join my <b>Telegram</b> channel
+<a href="https://t.me/+wIiqtcMH-u4zZjc0">press here</a>.
+
+ <p>Follow me on <b>Whatsapp</b> 0678101729 </p>
+ 
+    <form>
+<lable>First name</lable> <br>
+<input type="text"><br><br>
+<lable>Last name</lable><br>
+
+<input type="text"><br><br>
+
+<lable>Enter your email address</lable><br>
+<input type="text"><br>
+<br>
+<input type="checkbox" name="gender" id="">Male<br>
+
+<input type="checkbox" name="gender" id="">female<br>
+<br>
+
+<lable>Comment</lable><br>
+<input type="text"><br>
+<input type="submit" value="submit"><br>
+</form>
+<ul style="background-color: orange"><span>SAM copyright 2022©</span></ul>
+
+<ul><li><a href="English">English</li>
+<li><a href="नेपाली">नेपाली</li>
+<li><a href="हिन्दी">हिन्दी</li>
+<li><a href="More Language">More Language </li></ul>
+
+
+<div class="square1"></div>
+<div class="square2"></div>
+<div class="square3"></div>
+<div class="square4"></div>
+
+    
+     
+</body>
+</html>
